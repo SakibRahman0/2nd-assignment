@@ -44,6 +44,14 @@ header{
     font-size: 16px;
     border-radius: 10px;
 }
+.watch-btn i{
+    transition: transform 2s;
+}
+
+.top-title:hover i{
+    padding-right: 36px;
+    transform: translateX(44px);
+}
 .top-banner img{
     height: 460px;
     width: 560px;
@@ -54,7 +62,7 @@ header{
 
 main{
     width: 90%;
-    margin: 30px 0;
+    margin: 30px auto;
 }
 
 .player-list{
@@ -63,9 +71,10 @@ main{
     grid-column-gap: 10px;
     margin: 0 auto;
 }
-.palyer{
+.player{
     height: 480px;
     width: 350px;
+    margin-top: 20px;
     padding: 20px;
     box-shadow: 5px 5px 20px 2px gray;
 }
@@ -73,5 +82,66 @@ main{
    height: 260px;
    width: 300px;
 }
+.player-name{
+    font-size: 30px;
+}
+.player-info{
+    color: gray;
+}
 
-    
+/* footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 40px 0;
+}
+.logo img{
+   height: 114px;
+   width: 484px;
+}
+.social-site{
+    padding: 20px 0;
+
+}
+.social-site i{
+    color: red;
+    font-size: 30px;
+}
+
+@media screen and (max-widht:448px){
+
+ header{
+     height: auto;
+     width: 100%;
+ }
+.home{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+
+}
+.top-title{
+    font-size: 42px;
+    margin: 10px;
+}
+.top-banner img{
+ height: 400px;
+ width: 320px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+.logo img{
+    height: 60px;
+    width: 28px;
+}
+}
+  
+
